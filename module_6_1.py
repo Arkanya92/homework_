@@ -32,6 +32,7 @@ class Predator(Animal):
 
 class Flower(Plant):
     pass
+    
 class Fruit(Plant):
     def __init__(self, name, edible = True):
         self.name = name

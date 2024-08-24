@@ -13,8 +13,6 @@ def calculate_average(numbers):
     try:
         total_sum, incorrect_data = personal_sum(numbers)
         average = total_sum / (len(numbers) - incorrect_data)
-        if not isinstance(numbers, (list, tuple)):
-            raise TypeError()
     except ZeroDivisionError:
         average = 0
     except TypeError:
